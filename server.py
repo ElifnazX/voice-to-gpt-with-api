@@ -8,7 +8,7 @@ import os
 import tempfile
 import openai
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = os.environ.get("https://api.openai.com/v1/audio/transcriptions")
 from werkzeug.utils import secure_filename
 app = Flask(__name__, static_folder="static", static_url_path="/")
 

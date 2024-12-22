@@ -8,7 +8,7 @@ import audioop
 import os
 import subprocess
 
-openai.api_key = os.environ.get("OPENAI_API_KEY")
+openai.api_key = os.environ.get("https://api.openai.com/v1/audio/transcriptions")
 
 def transcribe_audio(file):
     file_root, _ = os.path.splitext(file)
